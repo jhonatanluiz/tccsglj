@@ -1,0 +1,27 @@
+/* 
+    Document   : sistema
+    Created on : Aug 14, 2012, 11:18:21 PM
+    Author     : jhonatan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.btn-entrar {
+    margin-top: -3px !important;
+}
+
+.container {
+    width: 960px !important;
+    min-width: 800px !important;
+}
+
+.span4 {
+    width: 300px !important;   
+}
+
+.header-title {
+    padding-bottom: 0px !important;
+}
+.tr-selected{
+    cursor:pointer; 
+}

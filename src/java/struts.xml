@@ -1,0 +1,18 @@
+<!DOCTYPE struts PUBLIC  
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+"http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+    <package name="default" extends="json-default">  
+        <interceptors>  
+            <interceptor name="login" class="tcc.sglj.action.AuthInterceptorAction" />  
+            <interceptor-stack name="loginStack">  
+                <interceptor-ref name="login" />   
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>  
+        </interceptors>  
+                
+        <global-results>
+            <result name="not_auth" type="redirectAction">authenticate/login</result>
+        </global-results>
+    </package>  
+</struts>  
