@@ -37,7 +37,7 @@ public abstract class App<T> {
             this.setUp();
             Set<ConstraintViolation<T>> constraintViolations = validator.validate(u);
             if (!constraintViolations.isEmpty()) {
-                setErrorMessage(constraintViolations.iterator().next().getMessage());
+                setErrorMessage(constraintViolations.iterator().next().getMessage() + "S");
             }
             return constraintViolations.size();
         } catch (Exception e) {
